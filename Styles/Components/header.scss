@@ -1,0 +1,38 @@
+.c-header {
+    .search-bar {
+        height: 2rem;
+        min-width: 50%;
+        border: 1px solid grey;
+        position: relative;
+
+        input {
+            border: 0;
+            width: 100%;
+            padding: 0.15rem 2rem 0.15rem 0.25rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            height: 100%;
+            width: 2rem;
+            border-left: 1px solid grey;
+            padding: 0.25rem;
+            position: absolute;
+            right: 0;
+        }
+    }
+
+
+    .actions {
+        height: 2rem;
+
+        button.cart {
+            border: 1px solid grey;
+            height: 100%;
+            width: 3rem;
+        }
+    }
+}
