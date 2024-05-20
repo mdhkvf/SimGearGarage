@@ -58,11 +58,22 @@ table {
   outline: inherit;
 }
 
+.c-header .navbar-brand {
+  order: 0;
+}
 .c-header .search-bar {
+  order: 1;
   height: 2rem;
   min-width: 50%;
   border: 1px solid grey;
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .c-header .search-bar {
+    order: 3;
+    width: 100%;
+    margin-top: 0.75rem;
+  }
 }
 .c-header .search-bar input {
   border: 0;
@@ -81,6 +92,7 @@ table {
   right: 0;
 }
 .c-header .actions {
+  order: 2;
   height: 2rem;
 }
 .c-header .actions button.cart {
