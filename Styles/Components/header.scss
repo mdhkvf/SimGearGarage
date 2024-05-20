@@ -1,9 +1,23 @@
+@import '../Utilities/breakpoints.scss';
+@import '../Variables/breakpoints.scss';
+
 .c-header {
+    .navbar-brand {
+        order: 0;
+    } 
+    
     .search-bar {
+        order: 1;
         height: 2rem;
         min-width: 50%;
         border: 1px solid grey;
         position: relative;
+
+        @include max-break($bp-sm) {
+            order: 3;
+            width: 100%;
+            margin-top: 0.75rem;
+        }
 
         input {
             border: 0;
@@ -27,6 +41,7 @@
 
 
     .actions {
+        order: 2;
         height: 2rem;
 
         button.cart {
