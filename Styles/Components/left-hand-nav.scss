@@ -1,0 +1,19 @@
+.c-left-hand-nav {
+    width: 300px;
+
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+
+    div {
+        border-bottom: 1px solid grey;
+        height: 3rem;
+        line-height: 3rem;
+        padding-left: 1rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: grey;
+        }
+    }
+}

@@ -101,6 +101,30 @@ table {
   width: 3rem;
 }
 
+.c-left-hand-nav {
+  width: 300px;
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+.c-left-hand-nav div {
+  border-bottom: 1px solid grey;
+  height: 3rem;
+  line-height: 3rem;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+.c-left-hand-nav div:hover {
+  background-color: grey;
+}
+
 *, p, h1, h2, h3, h4, h5, html {
   font-family: "Poppins";
+}
+
+.container {
+  display: flex;
+}
+.container main {
+  width: 100%;
 }
